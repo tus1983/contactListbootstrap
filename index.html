@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact List</title>
+  <!-- Latest compiled and minified CSS 는 제일 먼저 넣어줘야함 파일 돌아가기전에 뭔가 보여주니까-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- 내css는 나중에 나와야함 그래야 내 css가 붓스트랩을 overwrite을 안함 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" charset="utf-8">
+
+  </script>
+</head>
+<body>
+
+  <h1>Lena's Contact List App</h1>
+  <input id="nameBox" type="text" placeholder="Enter a name">
+  <input id="phoneBox" type="text" placeholder="Enter a phone number">
+  <input id="emailBox" type="text" placeholder="Enter an E-mail" >
+  <button id="groupBox" type="text" placeholder="Enter a group">
+  <button type="button" class="btn btn-primary" onclick="addContact()">Submit</button>
+  <h1></h1>
+  <table class="table table-hover">
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>E-mail</th>
+      <th>Group</th>
+      <th>Delete/Edit</th>
+    </tr>
+
+    <tbody id="contactList">
+      <!-- //data will ne added here dynamically. -->
+
+
+
+    </tbody>
+
+  </table>
+
+  <script src="app.js" charset="utr-8"></script>
+  <!-- Latest compiled and minified JavaScript 자바는 제일 늦게 열어줌. 파일 돌아가는데 시간이 걸리니까-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
